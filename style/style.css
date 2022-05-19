@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header h1 {
+  text-align: center;
+}
+
+#play-ground {
+  border: 1px solid black;
+  height: 90vh;
+  position: relative;
+}
+#play-ground #player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  margin-left: 680px;
+  margin-top: 380px;
+}
+#play-ground #computer-one {
+  border: 1px solid black;
+  background: green;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 180px;
+}
+#play-ground #computer-two {
+  border: 1px solid black;
+  background: green;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  margin-left: 1080px;
+  margin-top: 180px;
+}
+#play-ground #computer-three {
+  border: 1px solid black;
+  background: green;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  margin-left: 180px;
+  margin-top: 580px;
+}
+#play-ground #computer-four {
+  border: 1px solid black;
+  background: green;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  margin-left: 1080px;
+  margin-top: 580px;
+}
+
+/*# sourceMappingURL=style.css.map */
