@@ -41,6 +41,29 @@ header h1 #start {
   position: absolute;
   margin-left: 200px;
   margin-top: 180px;
+  animation: move 20s alternate infinite;
+}
+@keyframes move {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 800px;
+    top: 0px;
+  }
+  50% {
+    left: 800px;
+    top: 200px;
+  }
+  75% {
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    eft: 0px;
+    top: 0px;
+  }
 }
 #play-ground #computer-two {
   border: 1px solid black;
@@ -50,6 +73,29 @@ header h1 #start {
   position: absolute;
   margin-left: 1080px;
   margin-top: 180px;
+  animation: moveTwo 30s alternate infinite;
+}
+@keyframes moveTwo {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: -800px;
+    top: 0px;
+  }
+  50% {
+    left: -800px;
+    top: 200px;
+  }
+  75% {
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    eft: 0px;
+    top: 0px;
+  }
 }
 #play-ground #computer-three {
   border: 1px solid black;
@@ -59,6 +105,29 @@ header h1 #start {
   position: absolute;
   margin-left: 180px;
   margin-top: 580px;
+  animation: moveThree 30s alternate infinite;
+}
+@keyframes moveThree {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 700px;
+    top: 0px;
+  }
+  50% {
+    left: 700px;
+    top: -400px;
+  }
+  75% {
+    left: 0px;
+    top: -400px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
 }
 #play-ground #computer-four {
   border: 1px solid black;
@@ -68,6 +137,29 @@ header h1 #start {
   position: absolute;
   margin-left: 1080px;
   margin-top: 580px;
+  animation: moveFour 10s alternate infinite;
+}
+@keyframes moveFour {
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+  75% {
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    left: 200px;
+    top: -200px;
+  }
+  25% {
+    left: 0px;
+    top: -200px;
+  }
+  0% {
+    left: 0px;
+    top: 0px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

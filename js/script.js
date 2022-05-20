@@ -95,18 +95,6 @@ document.onkeydown = function(e) {
 
             // *************** making the boxes move random ********************
 
-        let computerDirection = [
-            '+',
-            '-'
-        ] 
-        for (let i = 0; i < 50; i++) {
-            setInterval( () => {
-                let randomNum = Math.floor(Math.random() * computerDirection.length);
-                cOne.style.marginTop = xOne + 5;
-
-            }, 500);
-
-        }
             // ********************** vertical and horizontal collision recognition **********************
 
             // box 1
