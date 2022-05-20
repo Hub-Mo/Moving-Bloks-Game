@@ -5,7 +5,14 @@ header {
     display: flex;
     justify-content: space-between;
     h1 {
+        display: flex;
+        flex-direction: column;
         text-align: center;
+        #start {
+            margin: 5px;
+            padding: 5px;
+            background: greenyellow;
+        }
     }
 }
 #play-ground {

@@ -7,7 +7,14 @@ header {
   justify-content: space-between;
 }
 header h1 {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+}
+header h1 #start {
+  margin: 5px;
+  padding: 5px;
+  background: greenyellow;
 }
 
 #play-ground {

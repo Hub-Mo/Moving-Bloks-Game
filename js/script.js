@@ -3,8 +3,12 @@ let playGround = document.getElementById('play-ground');
 let Player = document.getElementById('player');
 let x = 680;
 let y = 380;
-let computerOne = document.getElementById('computer-one');
 let playerLives = 3;
+let xOne = 200;
+let yOne = 180;
+
+
+
 
 document.onkeydown = function(e) {
 //************************* */ moving the player ***********************
@@ -25,7 +29,6 @@ document.onkeydown = function(e) {
         Player.style.marginLeft = x +'px';
     }
 
-    // *************** making the boxes move random ********************
     //   ************** touch border recognition **************
     let Width = document.getElementById('play-ground').clientWidth - 30;
     let Height = document.getElementById('play-ground').clientHeight - 30;
@@ -59,6 +62,7 @@ document.onkeydown = function(e) {
 
 
 // ****************variables for the 4 boxes and player for collision recognition***************
+        let cOne = document.getElementById('computer-one');
         let boxOne = document.getElementById('computer-one').getBoundingClientRect();
         let boxOneTop = boxOne.top;
         let boxOneLeft = boxOne.left;
@@ -89,7 +93,20 @@ document.onkeydown = function(e) {
         let playerBoxRight = playerBox.right;
         let playerBoxBottom = playerBox.bottom;
 
+            // *************** making the boxes move random ********************
 
+        let computerDirection = [
+            '+',
+            '-'
+        ] 
+        for (let i = 0; i < 50; i++) {
+            setInterval( () => {
+                let randomNum = Math.floor(Math.random() * computerDirection.length);
+                cOne.style.marginTop = xOne + 5;
+
+            }, 500);
+
+        }
             // ********************** vertical and horizontal collision recognition **********************
 
             // box 1
@@ -107,6 +124,7 @@ document.onkeydown = function(e) {
         else {
             horizontalMatchOne = false;
         }
+
         // box 2
         let verticalMatchTwo = false;
         let horizontalMatchTwo = false;
@@ -121,6 +139,7 @@ document.onkeydown = function(e) {
         else {
             horizontalMatchTwo = false;
         }
+
         // box 3
         let verticalMatchThree = false;
         let horizontalMatchThree = false;
@@ -135,6 +154,7 @@ document.onkeydown = function(e) {
         else {
             horizontalMatchThree = false;
         }
+
         // box 4
         let verticalMatchFour = false;
         let horizontalMatchFour = false;
