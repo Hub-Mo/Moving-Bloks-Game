@@ -1,4 +1,4 @@
-# Moving-Bloks-Game
+# Ninja Runner
 
 [check it out!](https://hub-mo.github.io/Moving-Bloks-Game/)
 
