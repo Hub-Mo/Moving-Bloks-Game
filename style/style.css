@@ -34,14 +34,13 @@ header h1 #start {
   margin-top: 380px;
 }
 #play-ground #computer-one {
-  border: 1px solid black;
-  background: green;
+  background: transparent;
   width: 60px;
   height: 60px;
   position: absolute;
   margin-left: 200px;
   margin-top: 180px;
-  animation: move 20s alternate infinite;
+  animation: move 20s alternate infinite, circle 30s linear infinite;
 }
 @keyframes move {
   0% {
@@ -65,15 +64,22 @@ header h1 #start {
     top: 0px;
   }
 }
+@keyframes circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(7200deg);
+  }
+}
 #play-ground #computer-two {
-  border: 1px solid black;
-  background: green;
+  background: transparent;
   width: 60px;
   height: 60px;
   position: absolute;
   margin-left: 1080px;
   margin-top: 180px;
-  animation: moveTwo 30s alternate infinite;
+  animation: moveTwo 30s alternate infinite, circle 30s linear infinite;
 }
 @keyframes moveTwo {
   0% {
@@ -98,14 +104,13 @@ header h1 #start {
   }
 }
 #play-ground #computer-three {
-  border: 1px solid black;
-  background: green;
+  background: transparent;
   width: 60px;
   height: 60px;
   position: absolute;
   margin-left: 180px;
   margin-top: 580px;
-  animation: moveThree 30s alternate infinite;
+  animation: moveThree 30s alternate infinite, circle 30s linear infinite;
 }
 @keyframes moveThree {
   0% {
@@ -130,14 +135,13 @@ header h1 #start {
   }
 }
 #play-ground #computer-four {
-  border: 1px solid black;
-  background: green;
+  background: transparent;
   width: 60px;
   height: 60px;
   position: absolute;
   margin-left: 1080px;
   margin-top: 580px;
-  animation: moveFour 10s alternate infinite;
+  animation: moveFour 10s alternate infinite, circle 30s linear infinite;
 }
 @keyframes moveFour {
   100% {

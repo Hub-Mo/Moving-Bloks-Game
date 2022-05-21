@@ -13,49 +13,49 @@ let yOne = 180;
 document.onkeydown = function(e) {
 //************************* */ moving the player ***********************
     if ( e.key == 'ArrowUp') {
-        y -= 5;
+        y -= 10;
         Player.style.marginTop = y +'px';
     }
     if ( e.key == 'ArrowRight') {
-        x += 5;
+        x += 10;
         Player.style.marginLeft = x +'px';
     }
     if (e.key == 'ArrowDown') {
-        y += 5;
+        y += 10;
         Player.style.marginTop = y +'px';
     }
     if ( e.key == 'ArrowLeft') {
-        x -= 5;
+        x -= 10;
         Player.style.marginLeft = x +'px';
     }
 
     //   ************** touch border recognition **************
     let Width = document.getElementById('play-ground').clientWidth - 30;
-    let Height = document.getElementById('play-ground').clientHeight - 30;
+    let Height = document.getElementById('play-ground').clientHeight - 60;
     let target = document.getElementById('lives-target');
     
     if ( y <= 0) {
         playerLives -= 1;
         target.innerHTML = 'Lives left ' + playerLives + '/3';
-        y += 5;
+        y += 10;
         Player.style.marginTop = y + 'px';
         }
         else if (x <= 0) {
             playerLives -= 1;
             target.innerHTML = 'Lives left ' + playerLives + '/3';
-            x += 5;
+            x += 10;
             Player.style.marginLeft = x + 'px'
         }
         else if (y >= Height) {
             playerLives -= 1;
             target.innerHTML = 'Lives left ' + playerLives + '/3';
-            y -= 5;
+            y -= 10;
             Player.style.marginTop = y + 'px';
         }
         else if (x >= Width) {
             playerLives -= 1;
             target.innerHTML = 'Lives left ' + playerLives + '/3';
-            x -= 5;
+            x -= 10;
             Player.style.marginLeft = x + 'px';
         }
 
@@ -92,9 +92,6 @@ document.onkeydown = function(e) {
         let playerBoxLeft = playerBox.left;
         let playerBoxRight = playerBox.right;
         let playerBoxBottom = playerBox.bottom;
-
-            // *************** making the boxes move random ********************
-
             // ********************** vertical and horizontal collision recognition **********************
 
             // box 1
